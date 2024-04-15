@@ -1,0 +1,124 @@
+<!DOCTYPE html>  
+<html>  
+<head>
+<style>  
+.i1{
+position:absolute;
+z-index:-1;
+top:0px;
+left:0px;
+filter: brightness(50%);
+}
+div{
+background-color: rgba(0,0,0,0.7);
+position:absolute;
+width:23%;
+height:73%;
+top:10%;
+left:37%;
+padding:4%;
+}
+.l1{
+font-size:35px;
+font-family:sans-serif;
+}
+.a1{
+width:100%;
+height:7%;
+color: white;
+background-color: #282626;
+border-radius:5px;
+position:relative;
+top:5%;
+}
+.a2{
+width:100%;
+height:7%;
+color: white;
+background-color: #282626;
+position:relative;
+border-radius:5px;
+top:10%;
+}
+button{
+width:102.5%;
+height:7%;
+color:White;
+border-radius:5px;
+background-color:red;
+position:relative;
+top:16%;
+font-size:15px;
+}
+p{
+font-size:18px;
+
+}
+.c1{
+color:white;
+text-decoration:none;
+font-family:sans-serif;
+position:relative;
+left:3%;
+top:-7.3%;
+font-size:20px;
+}
+.c2{
+font-size:14px;
+font-family:sans-serif;
+}
+.c3{
+color:white;
+position:absolute;
+text-decoration:none;
+top:50%;
+font-family:sans-serif;
+left:70%;
+}
+.i2{
+position:absolute;
+width:23%;
+top:-10%;
+font-family:sans-serif;
+left:-2%;
+}
+
+</style>
+<meta charset="ISO-8859-1">  
+<title>Servlet Login Example</title>  
+</head>  
+<body>
+  <script>
+    
+    function nextpage()
+    { 
+      var a=document.getElementById(1).value;
+      var b=document.getElementById(2).value;
+      if(a=="riya" && b=="123")
+      {
+        location.replace("next.html");
+      }else
+      {
+        alert("fail");
+      }
+    }
+  </script>
+  <img class="i1"; src="Images/netflix.jpeg" width="100%"; height="100%";>
+  <form><div>  
+  <label style="color:White" class="l1";>Sign In</label><br>
+<input type="text" placeholder="Enter your username" id="1" class="a1"; required><br>
+<input type="password" placeholder="Enter your password" id="2"  class="a2"; required><br>
+<button type="button" class="b1"  onclick="nextpage()";><b>Sign In</b></button><br>
+<br><br><br><br><br><br><br><br><br><br>
+<p style="color:#999999; font-family:sans-serif;";>New to Netflix?
+<a href="https://www.netflix.com/in/" class="c1";>Sign up now</a></p>
+<br>
+<p class="c2"; style="color:#999999";>This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+<a class="c3"; href="https://www.netflix.com/in/LoginHelp";>Need help?</a>
+
+</div></form> 
+
+<img class="i2"; src="Images\logo-removebg-preview.png">
+  
+</body>  
+</html>
